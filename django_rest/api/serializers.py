@@ -1,4 +1,7 @@
 from rest_framework import serializers
-from talk.models import Post
+from .models import Message
 
-class 
+class MessageSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Message
+        fields = '__all__'
