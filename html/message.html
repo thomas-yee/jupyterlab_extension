@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Link css file -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--Axios-->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script>
+            const axios = require('axios').default;
+            // Perform GET request
+            axios.get('/api/echo/')
+                .then(function(response) {
+                //handle success
+                console.log(response);
+            })
+                .then(function() {
+
+            });
+
+            axios.post('/api/echo/')
+                .then(function(response){
+                    console.log(response);
+            })
+                .then(function(response) {
+
+            });
+
+            
+        </script>
+    </head>
+<body>
+    <section class = "input_message">
+        <form action="">
+            <label for "message">Message:</label>
+            <input type = "text" placeholder = "Input Field...">
+            <div align="right">
+                <input type = "submit", id='send'>
+            </div>
+            
+        </form>
+    </section>
+    <section class = "echo_message">
+
+    </section>
+</body>
+</html>

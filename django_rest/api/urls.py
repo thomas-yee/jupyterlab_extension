@@ -3,7 +3,7 @@ from rest_framework import routers
 from . import views
 
 router = routers.DefaultRouter()
-router.register(r'messages', views.MessageViewSet)
+router.register(r'echo', views.MessageViewSet)
 
 #Wire up the API using automatic URL routing
 urlpatterns = [
